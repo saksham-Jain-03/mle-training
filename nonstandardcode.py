@@ -117,6 +117,7 @@ housing_tr["population_per_household"] = (
     housing_tr["population"] / housing_tr["households"]
 )
 
+
 housing_cat = housing[["ocean_proximity"]]
 housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
 
